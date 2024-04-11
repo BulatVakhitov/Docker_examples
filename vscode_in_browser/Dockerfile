@@ -1,5 +1,8 @@
 FROM ubuntu:lunar
 
+# largely borrowed from https://github.com/gitpod-io/openvscode-releases/blob/main/Dockerfile
+# and from https://github.com/analysiscenter/ds-py3/blob/master/build/Dockerfile
+
 ENV TOKEN=password
 
 RUN apt-get update && apt -y dist-upgrade && \
